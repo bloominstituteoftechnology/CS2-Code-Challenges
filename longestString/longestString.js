@@ -27,7 +27,7 @@ const longestStr = (arr) => {
 };
 */
 
-// 3b. Solution #4
+// 3b. Solution #2
 const longestStr = (arr) => {
   let x = '';
   arr.forEach(i => {
