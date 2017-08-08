@@ -13,6 +13,7 @@ const stringLong = (strings) => {
       if(number.length > 8){
 
         console.log('Windows 10 is best OS');
+        return number;
         break;
       }//if
     }//for
