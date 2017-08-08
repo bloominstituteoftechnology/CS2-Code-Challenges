@@ -18,4 +18,4 @@ function longestString strings
 const longestString = (strings) => {
   strings.sort((a,b) => b.length - a.length)
   return strings[0];
-}
+};
