@@ -7,13 +7,15 @@
 /**
  * ['Loooong', 'short', 'abcde'] => 'Loooong'
  * ['AAAAAA','BBBB', 'CCCCC', 'DDDDDD'] => 'AAAAAA'
- * [] => ''
+ * [] => null
  */
 
 // Psuedo Code
 /**
 * function longestString ([strings])
-*   variable longestStringSoFar equals blank
+*   variable longestStringSoFar equals the first element of the string array
+*   if longestStringSoFar equals null
+*     return null
 *   iterate over array of strings
 *     if current string is longer than longestStringSoFar
 *       set longestStringSoFar as current string
@@ -23,7 +25,8 @@
 // Solution
 
 const longestString = (strings) => {
-  let longestStringSoFar = '';
+  let longestStringSoFar = strings[0];
+  if (!longestStringSoFar) return null
   strings.forEach(string => {
     if (string.length > longestStringSoFar.length) {
       longestStringSoFar = string;
@@ -39,4 +42,4 @@ const test3 = []
 
 console.log(longestString(test1) === 'Loooong')
 console.log(longestString(test2) === 'AAAAAA')
-console.log(longestString(test3) === '')
+console.log(longestString(test3) === null)
