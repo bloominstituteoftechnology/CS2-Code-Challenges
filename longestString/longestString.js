@@ -29,7 +29,7 @@ const longestStr = (arr) => {
 
 // 3b. Solution #2
 const longestStr = (arr) => {
-  let x = '';
+  let x = arr[0];
   arr.forEach(i => {
     if (i.length > x.length) x = i;
   });
