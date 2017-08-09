@@ -24,11 +24,9 @@
   // Solution
   const reversCase = (string) => string
     .split('')
-    .map(char => {
-      if (char === char.toUpperCase()) return char.toLowerCase();
-      else return char.toUpperCase();
-    })
-    .join('');
+    .map(c => c.toUpperCase() === c ? c.toLowerCase() : c.toUpperCase())
+    .join('')
+
 
   // Tests
   const test1 = "Hello World";
