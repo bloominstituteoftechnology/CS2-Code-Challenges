@@ -13,9 +13,9 @@
 // Psuedo Code
 /**
 * function longestString ([strings])
-*   variable longestStringSoFar equals the first element of the string array
-*   if longestStringSoFar equals null
+*   if strings array is empty
 *     return null
+*   variable longestStringSoFar equals the first element of the string array
 *   iterate over array of strings
 *     if current string is longer than longestStringSoFar
 *       set longestStringSoFar as current string
@@ -25,8 +25,8 @@
 // Solution
 
 const longestString = (strings) => {
+  if (strings.length === null) return null
   let longestStringSoFar = strings[0];
-  if (!longestStringSoFar) return null
   strings.forEach(string => {
     if (string.length > longestStringSoFar.length) {
       longestStringSoFar = string;
