@@ -21,14 +21,10 @@
  */
 
 // 3a. Solution Using .split(), .map(), .join()
-const reverseCase = function (str) {
-    return str.split('').map(function(x){
-        return x === x.toUpperCase() ? x.toLowerCase() : x.toUpperCase()
-    }).join('');
-}
+const reverseCase = str => str.split('').map((x) => x === x.toUpperCase() ? x.toLowerCase() : x.toUpperCase()).join('');
 
 // 3b. Solution Using for loop
-const reverseCase = function (str) {
+const reverseCase = str => {
     let s = '';
     for (let i=0; i<str.length; i++) {
         let n = str.charAt(i)
