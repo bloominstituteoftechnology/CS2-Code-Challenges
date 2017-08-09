@@ -4,7 +4,7 @@
  * Assume that each string will contain only spaces and letters.
  */
 
- /* 1. Identify Test Cases
+/* 1. Identify Test Cases
   * const a = 'Bacon ipsum dolor amet spare ribs drumstick strip steak.'
   * const b = 'HeLLo WoRLd!'
   * const c = 'bvAlhatQBq'
@@ -21,15 +21,18 @@
  */
 
 // 3a. Solution Using .split(), .map(), .join()
-const reverseCase = str => str.split('').map((x) => x === x.toUpperCase() ? x.toLowerCase() : x.toUpperCase()).join('');
+const reverseCase = str =>
+	str
+		.split('')
+		.map(x => (x === x.toUpperCase() ? x.toLowerCase() : x.toUpperCase()))
+		.join('');
 
 // 3b. Solution Using for loop
 const reverseCase = str => {
-    let s = '';
-    for (let i=0; i<str.length; i++) {
-        let n = str.charAt(i)
-        s += n === n.toUpperCase() ? n.toLowerCase() : n.toUpperCase()
-    }
-    return s
-}
-
+	let s = '';
+	for (let i = 0; i < str.length; i++) {
+		let n = str.charAt(i);
+		s += n === n.toUpperCase() ? n.toLowerCase() : n.toUpperCase();
+	}
+	return s;
+};
