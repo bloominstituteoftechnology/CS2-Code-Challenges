@@ -4,7 +4,7 @@
  * Assume that each string will contain only spaces and letters.
  */
 
- /* Identify Test Cases
+ /* 1. Identify Test Cases
   * const a = 'Bacon ipsum dolor amet spare ribs drumstick strip steak.'
   * const b = 'HeLLo WoRLd!'
   * const c = 'bvAlhatQBq'
