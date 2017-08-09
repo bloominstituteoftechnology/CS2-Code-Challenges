@@ -25,8 +25,8 @@
 // Solution
 
 const longestString = (strings) => {
-  if (strings.length === null) return null
   let longestStringSoFar = strings[0];
+  if (!longestStringSoFar) return null
   strings.forEach(string => {
     if (string.length > longestStringSoFar.length) {
       longestStringSoFar = string;
