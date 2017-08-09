@@ -19,4 +19,4 @@ const caseChange = (str) =>{
 
 let string = 'Hello World';
 
-let reversedString = caseChange(string); // "sO, TODAY WE HAVE really GOOD DAY"
+let reversedString = caseChange(string);
