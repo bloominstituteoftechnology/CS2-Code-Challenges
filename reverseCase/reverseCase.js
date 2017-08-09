@@ -5,7 +5,7 @@
  */
 
 const caseChange = (str) =>{
-    var newCase = '';
+    let newCase = '';
     for (let i = 0; i < str.length; i++){
         if(str[i] === str[i].toLowerCase()){
             newCase += str[i].toUpperCase();
@@ -19,4 +19,4 @@ const caseChange = (str) =>{
 
 let string = 'Hello World';
 
-let reversedString = caseChange(string); // "sO, TODAY WE HAVE really GOOD DAY"
+let reversedString = caseChange(string);
