@@ -36,6 +36,6 @@ const isUnique = str => {
 
 // 3c. Solution using spread operator / new Set() / .join()
 const isUnique = str => {
-	const u = x => [...new Set(x)].join('');
-	console.log(u(str) === str); // return true if string contains unique characters
+	const x = [...new Set(str)].join('');
+	console.log(x === str); // return true if string contains unique characters
 };
