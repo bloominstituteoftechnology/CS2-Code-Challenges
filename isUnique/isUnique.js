@@ -4,9 +4,9 @@
  */
 
 /* 1. Identify Test Cases
-  * const a = 'Bacon ipsum dolor amet spare ribs drumstick strip steak.'
-  * const b = 'HeLLo WORLd!'
-  * const c = 'bvAlhatQBq'
+  * const a = 'Bacon ipsum dolor amet spare ribs drumstick strip steak.'    // false
+  * const b = 'HeLLo WORLd!'    // false
+  * const c = 'bvAlh!(@^$%#)atQBq'  // true
   */
 
 /* 2. Pseudo-Code
@@ -17,8 +17,20 @@
  * return true if has unique characters, otherwise return false
  */
 
-// 3. Solution using an Array
-const uniqueChars = str => {
-	let x = Array.from(new Set(str));
-	console.log(x !== str);
+// 3a. Solution using for loop / indexOf()
+const isUnique = str => {
+	let x = '';
+
+	for (let i = 0; i < str.length; i++) {
+		if (x.indexOf(str[i]) === -1) {
+			x += str[i];
+		}
+	}
+	console.log(x === str); // return true if string contains unique characters
+};
+
+// 3b. Solution using an Array.from() / new Set() / .join()
+const isUnique = str => {
+	let x = Array.from(new Set(str)).join('');
+	console.log(x === str); // return true if string contains unique characters
 };
