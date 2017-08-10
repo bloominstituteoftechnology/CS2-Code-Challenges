@@ -13,24 +13,17 @@
 
 // Psuedo Code
 /**
-* split the string into an array
-*   filter the array 
-*     return only if the current character's in the string array 
-*     matches the current iteration's index
-*   compare the length of the filtered array to the length of the string
-*     if the lengths match return true, else false
+* create a new Set with the string char values (which automatically dedupes string chars)
+*   return set size compared to string length
 */
 
 //Solution
-const isUnique = (string) => string
-  .split('')
-  .filter((val, index, self) => self.indexOf(val) === index)
-  .length === string.length;
+const isUnique = (string) => new Set(string).size === string.length
 
 //Tests
 const test1 = 'AAABBBCCC' // => false
 const test2 = 'ABCDEFGHI' // => true
-const test3 = 'AaBbCcDdEe' // => false
+const test3 = 'AaBbCcDdEe' // => true
 const test4 = 'ABCabcABCabc' // => false
 const test5 = '' // => true
 
