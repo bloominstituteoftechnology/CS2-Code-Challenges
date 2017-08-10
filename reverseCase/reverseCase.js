@@ -2,6 +2,7 @@
  * Write a function that reverses the case of each letter in the strings that it receives.
  * Example: 'Hello World' -> 'hELLO wORLD'
  * Assume that each string will contain only spaces and letters.
+<<<<<<< HEAD
  */
 
 // 1. identify test cases
@@ -63,3 +64,6 @@ console.log(reverseCase(''));
 console.log(reverseCaseAlt('Hello World'));
 console.log(reverseCaseAlt('tE sT'));
 console.log(reverseCaseAlt(''));
+=======
+ */
+>>>>>>> 152158b7139de760aefdb68c9549bf8a02277400
