@@ -5,15 +5,10 @@
 
 
 
-const isUnique = (`!`, `@`, `#`, `$`, `%`);
-const falsie = false;
-const truthsie = true;
+ const isUnique = (`!`, `@`, `#`, `$`, `%`);
 
-if (isUnique < 100) {
-  console.log('this does not have unique char');
-  return falsie;
-} else {
-  console.log('This has unique char');
-  console.log(isUnique);
-  return truthsie;
-}
+ if (isUnique < 100) {
+   console.log('this does not have unique char');
+ } else
+   console.log('This has unique char');
+   console.log(isUnique);
