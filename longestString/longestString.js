@@ -18,7 +18,7 @@
 
 
 
-const longest = function(arr){
+const longest = (arr) => {
   if(arr.length === 0) return null;
   let longestLength = arr[0].length;
   let longestString = arr[0];
