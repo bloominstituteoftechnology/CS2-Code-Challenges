@@ -61,7 +61,7 @@ multiplyNums(5, 10, (product) => {
 // Write a function called contains that checks if an item is present inside of the given array.
 // Pass true to the callback if it is, otherwise pass false
 
-const contains = (arr, item, cb) => cb(foods.indexOf(item) !== -1)
+const contains = (arr, item, cb) => cb(arr.indexOf(item) !== -1)
 
 contains(foods, 'ribeye', (result) => {
   console.log(result ? 'ribeye is in the array' : 'ribeye is not in the array');
