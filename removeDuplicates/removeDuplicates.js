@@ -9,5 +9,13 @@
  */
 
 const removeDuplicates = (arr) => {
-	//code here...
+	const newArr = [];
+	for (let i = 0; i < arr.length; i++) {
+		if (!newArr.includes(arr[i])) {
+			newArr.push(arr[i]);
+		}
+	}
+	return newArr;
 };
+
+console.log(removeDuplicates([1,2,3,5,4,6,6,7,9,8]))
