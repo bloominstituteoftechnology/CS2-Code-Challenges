@@ -13,15 +13,15 @@
  *    cb(str);
  *  };
  *
-*/
+ */
 
 
 // Write a function called firstItem that passes the first item of the given array to the callback function
 
 const foods = ['pineapple', 'mango', 'ribeye', 'curry', 'tacos', 'ribeye', 'mango'];
 
-const firstItem = (foods, cb) => {
-  cb(foods[0]);
+const firstItem = (arr, cb) => {
+  cb(arr[0]);
 };
 
 firstItem(foods, (firstItem) => {
@@ -30,8 +30,8 @@ firstItem(foods, (firstItem) => {
 
 // Write a function called getLength that passes the length of the array into the callback
 
-const getLength = (foods, cb) => {
-  cb(foods.length);
+const getLength = (arr, cb) => {
+  cb(arr.length);
 };
 
 getLength(foods, (length) => {
@@ -40,8 +40,8 @@ getLength(foods, (length) => {
 
 // Write a function called last which passes the last item of the array into the callback
 
-const last = (foods, cb) => {
-  cb(foods[foods.length - 1]);
+const last = (arr, cb) => {
+  cb(arr[arr.length - 1]);
 };
 
 last(foods, (lastItem) => {
@@ -50,19 +50,19 @@ last(foods, (lastItem) => {
 
 // Write a function called sumNums that adds two numbers and passes the result to the callback
 
-const sumNums = (num1, num2, cb) => {
-  cb(num1 + num2);
+const sumNums = (x, y, cb) => {
+  cb(x + y);
 };
+
 sumNums(5, 10, (sum) => {
   console.log(`The sum is ${sum}.`);
 });
 
 // Write a function called multiplyNums that adds two numbers and passes the result to the callback
 
-const multiplyNums =(num1, num2, cb) => {
-  cb(num1 * num2);
+const multiplyNums = (x, y, cb) => {
+  cb(x * y);
 };
-
 
 multiplyNums(5, 10, (product) => {
   console.log(`The product is ${product}.`);
@@ -71,14 +71,9 @@ multiplyNums(5, 10, (product) => {
 // Write a function called contains that checks if an item is present inside of the given array.
 // Pass true to the callback if it is, otherwise pass false
 
-const contains = (foods, item, cb) => {
-  for(let i = 0; i < foods.length; i++){
-      if(foods[i] === item){
-      cb(true);
-  }
- }
-return false;
-}
+const contains = (collection, item, cb) => {
+  cb(collection.includes(item));
+};
 
 contains(foods, 'ribeye', (result) => {
   console.log(result ? 'ribeye is in the array' : 'ribeye is not in the array');
@@ -87,27 +82,25 @@ contains(foods, 'ribeye', (result) => {
 // Write a function called removeDuplicates that removes all duplicate values from the given array.
 // Pass the array to the callback function.  Do not mutate the original array.
 
-const removeDuplicates = (foods, cb) => {
-  for (let i = 0; i < foods.length; i++){
-    if(foods[i]===foods[i])
-
-  }
-}
-
+const removeDuplicates = (arr, cb) => {
+  const set = new Set();
+  arr.forEach(item => {
+    set.add(item);
+  });
+  cb(Array.from(set));
+};
 
 removeDuplicates(foods, (uniqueFoods) => {
   console.log(`foods with duplicates removed: ${uniqueFoods}`);
 });
 
 // Write a function called forEach that iterates over the provided array and passes the value and index into the callback.
-const forEach = (foods, cb) => {
-  for (let i = 0; i < foods.length; i++){
-    cb(foods[i], i);
+
+const forEach = (arr, cb) => {
+  for (let i = 0; i < arr.length; i++) {
+    cb(arr[i], i);
   }
-}
-
-
-
+};
 
 forEach(foods, (value, index) => {
   console.log(`${value} is at index ${index}.`);
