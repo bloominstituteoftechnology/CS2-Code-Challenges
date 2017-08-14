@@ -9,5 +9,14 @@
  */
 
 const removeDuplicates = (arr) => {
-	//code here...
+	let decluttered = [arr[0]];
+
+	for (let i = 1; i < arr.length; i++) {
+		if (arr[i] != arr[i-1]) {
+			decluttered.push(arr[i]);
+		}
+	}
+	return decluttered;
 };
+
+console.log(removeDuplicates([0, 1, 1, 2, 3, 3, 3, 4, 4, 5]));
