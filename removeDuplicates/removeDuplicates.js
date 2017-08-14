@@ -11,7 +11,7 @@
 const removeDuplicates = (arr) => {
 	//code here...
   arr = arr.filter((item, index, inputArr) => {
-    return inputArr.indexOf(item) == index;
+    return inputArr.indexOf(item) === index;
   });
 console.log(arr);
 };
