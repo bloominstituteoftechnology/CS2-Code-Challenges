@@ -8,6 +8,6 @@
  *  you're more than likely using a for loop under the hood.
  */
 
-const removeDuplicates = (arr) => {
-	//code here...
-};
+const removeDuplicates = (arr) => Array.from(new Set(arr))
+
+const test1 = [1, 1, 1, 2, 2, 3, 4, 5, 5] // -> [1, 2, 3, 4, 5]
