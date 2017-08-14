@@ -1,5 +1,6 @@
 /* Implement an algorithm to determine if a string has all unique characters.
  * What if you cannot use additional data structures?
+<<<<<<< HEAD
  */
 
 const findUnique = (str) => {
@@ -60,3 +61,6 @@ const str2 = 'abcdefgg';
 const result = isUnique(str2);
 
 console.log(result);
+=======
+ */
+>>>>>>> 20a23e650b13f650a1ea3eba2f463dedcd13e115
