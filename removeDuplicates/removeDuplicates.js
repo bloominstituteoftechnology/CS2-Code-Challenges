@@ -10,4 +10,9 @@
 
 const removeDuplicates = (arr) => {
 	//code here...
+  arr = arr.filter((item, index, inputArr) => {
+    return inputArr.indexOf(item) == index;
+  });
+console.log(arr);
 };
+removeDuplicates([1, 1, 1, 2, 2, 3, 4, 5, 5]);
