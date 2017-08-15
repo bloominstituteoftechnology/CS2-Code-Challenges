@@ -28,24 +28,30 @@ firstItem(foods, (firstItem) => {
 
 getLength(foods, (length) => {
   console.log(`The length of the array is ${length}.`);
+  cb(food.length);
 });
 
 // Write a function called last which passes the last item of the array into the callback
 
 last(foods, (lastItem) => {
   console.log(`The last item in the array is ${lastItem}.`);
+  cb(foods(foods.length -1));
 });
 
 // Write a function called sumNums that adds two numbers and passes the result to the callback
 
 
 sumNums(5, 10, (sum) => {
+ const numSums = x + y;
+ cb(numSums);
   console.log(`The sum is ${sum}.`);
 });
 
 // Write a function called multiplyNums that adds two numbers and passes the result to the callback
 
 multiplyNums(5, 10, (product) => {
+  const numsMulti = x * y;
+  cb(numsMulti);
   console.log(`The product is ${product}.`);
 });
 
@@ -53,6 +59,7 @@ multiplyNums(5, 10, (product) => {
 // Pass true to the callback if it is, otherwise pass false
 
 contains(foods, 'ribeye', (result) => {
+cb(foods.includes(item));
   console.log(result ? 'ribeye is in the array' : 'ribeye is not in the array');
 });
 
