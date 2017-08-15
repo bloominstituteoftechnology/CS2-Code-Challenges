@@ -7,6 +7,7 @@
  *  So if you're using 'indexOf' 'sort' 'forEach' etc, 
  *  you're more than likely using a for loop under the hood.
  */
+<<<<<<< HEAD
 let numbers = [2,3,5,4,3,2,65,5,2];
 const removeDuplicates = (arr) => {
 	//code here...
@@ -15,3 +16,9 @@ const removeDuplicates = (arr) => {
 };
 
 console.log(removeDuplicates(numbers));
+=======
+
+const removeDuplicates = (arr) => {
+	//code here...
+};
+>>>>>>> f75af20f74da22c8512a4b36b7b3655b91930623
