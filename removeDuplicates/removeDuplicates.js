@@ -8,12 +8,26 @@
  *  you're more than likely using a for loop under the hood.
  */
 
+//initial code
 const removeDuplicates = (arr) => {
-	const noDuplicates = [];
+	const newArr = [];
 	for (let i = 0; i < arr.length; i++) {
-		if(!(noDuplicates.includes(arr[i]))) {
-			noDuplicates.push(arr[i]);
+		if(!(newArr.includes(arr[i]))) {
+			newArr.push(arr[i]);
 		}
 	}
-	return noDuplicates;
+	return newArr;
 };
+
+//"beast mode"
+const removeDuplicates = (arr) => {
+	const newArr = [];
+	const obj = {};
+	for (let i =0; i < arr.length; i++) {
+		if (!obj[arr[i]]) {
+			obj[arr[i]] = true;
+			newArr.push(arr[i]);
+		}
+	}
+	return newArr;
+}
