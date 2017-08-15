@@ -9,5 +9,9 @@
  */
 
 const removeDuplicates = (arr) => {
-	//code here...
+	//code here... 
+	const dopple = {}; 
+	return arr.filter(function(item)  {
+		return dopple.hasOwnProperty ? false : (dopple[item] = true); 
+	});
 };
