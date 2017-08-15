@@ -8,6 +8,12 @@
  *  you're more than likely using a for loop under the hood.
  */
 
+<<<<<<< HEAD
 const removeDuplicates = arr.filter( (el, i, arr) => array.indexOf(el) === i);
 
 console.log(removeDuplicates);
+=======
+const removeDuplicates = (arr) => {
+	//code here...
+};
+>>>>>>> f75af20f74da22c8512a4b36b7b3655b91930623
