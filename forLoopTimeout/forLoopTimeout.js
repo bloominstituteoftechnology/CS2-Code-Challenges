@@ -4,7 +4,8 @@
 // The output should be 1, 2, 3, .... 10. Right now it just prints 11.
 // I've been asked this three times in separate interviews.
 
-for (var i = 1; i <= 10; i++) {
+// 'let' has the ability to block scope, whereas 'var' does not.
+for (let i = 1; i <= 10; i++) {
 	setTimeout(function() {
 		// From looking at the code you would assume it would print 1 - 10
 		// It doesn't.  Why?  How can you make it print 1 - 10.
