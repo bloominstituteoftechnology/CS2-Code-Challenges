@@ -17,7 +17,7 @@ function doSetTimeout(i) {
 // If you don't do something like this (and there are other variations on 
 // this same idea), then each of the timer handler functions will share the 
 // same variable "i". When the loop is finished, what's the value of "i"? 
-// It's 3! 
+// It's 11! 
 // By using an intermediating function, a copy of the value of the 
 // variable is made. Since the timeout handler is created in the context of 
 // that copy, it has its own private "i" to use.
