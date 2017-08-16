@@ -19,15 +19,15 @@
 // }
 
 // 2c. Solution: New scope for each iteration using IIFE, setTimeout function callback 
-//		 provided a variable j that evaluates to i within the scope of for loop
+// 		 provided a variable j that evaluates to i within the scope of for loop
 // for (var i = 1; i <= 10; i++) {
 // 	(() => {
-// 			var j = i;
-// 			setTimeout(() => console.log(j), 0);
+// 		var j = i;
+// 		setTimeout(() => console.log(j), 0);
 // 	})();
 // }
 
 // 2d. Solution: New scope for each iteration using IIFE (passing i as an argument)
 for (var i = 1; i <= 10; i++) {
-			 ((i) => setTimeout(() => console.log(i), 0))(i);
+	((i) => setTimeout(() => console.log(i), 0))(i);
 }
