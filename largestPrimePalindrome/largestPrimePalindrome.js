@@ -8,14 +8,14 @@
 //Test 1000 => 929
 
 function isPrime(number) {
-     if (number < 2) {return false}
-     if (number != Math.round(number)) {return false}
-     let isPrime = true;
-     for (var i = 2; i <= Math.sqrt(number); i++) {
-        if (number % i == 0) {isPrime = false}
-     }
-     return isPrime;
+  if (number < 2) {return false}
+  if (number != Math.round(number)) {return false}
+  let isPrime = true;
+  for (var i = 2; i <= Math.sqrt(number); i++) {
+    if (number % i == 0) {isPrime = false}
   }
+  return isPrime;
+}
 
 const longestPalindromePrime = (number) => {
   for (let i = 0; i < number; i++){
