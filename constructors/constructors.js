@@ -44,8 +44,38 @@ class Humanoid extends NPC {
     super();
   }
 }
+class Animal extends NPC {
 
+}
+class Plant extends NPC {
+
+}
 class Elf extends Humanoid {
+}
+
+class Human extends Humanoid {
+
+}
+class Orc extends Humanoid {
+
+}
+class Peasant extends Humanoid {
+
+}
+class Bandit extends Humanoid {
+
+}
+class Soldier extends Humanoid {
+
+}
+class FleshEatingDaisy extends Plant {
+
+}
+class Wolf extends Animal {
+
+}
+class Bear extends Animal {
+
 }
 
 const me = new Humanoid('Matt');
