@@ -1,4 +1,3 @@
-
 const isPrime = n => {
   let divisor = 3,
       limit = Math.sqrt(n);
@@ -12,6 +11,7 @@ const isPrime = n => {
   }
   return true;
 }
+
 const isPalindrome = n => {
   let str = n.toString(),
       len = str.length;
@@ -22,6 +22,7 @@ const isPalindrome = n => {
   }
   return true;
 }
+
 const largestPrimePalindrome = n => {
   for (let i = n; i > 0; i--) {
     if (isPrime(i) && isPalindrome(i)) return i;
