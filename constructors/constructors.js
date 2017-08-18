@@ -18,6 +18,42 @@
  *
  * Create properties for these different classes that fit with the character.
  *
- * This is how you would structure the game objects in an actual game
+ * This is how you would structure the game objectsme in an actual game
  * application in Unity or another similar framework.
  */
+
+class NPC {
+  constructor(name) {
+    this.alive = true;
+    this.name = name;
+  }
+  attack(target) {
+    console.log(`${this.name} attacks ${target}`);
+  }
+  describe() {
+    if (this.alive) console.log(`${this.name} is alive`);
+    else console.log(`${this.name} is dead....`);
+  }
+  /*get name() {
+    return this.name;
+  }*/
+}
+
+class Humanoid extends NPC {
+  constructor(name) {
+    super();
+  }
+}
+
+class Elf extends Humanoid {
+}
+
+const me = new Humanoid('Matt');
+const me2 = new Elf('Lego');
+const me3 = new NPC('test');
+me3.describe();
+me.attack('nic');
+me.describe();
+me.name;
+
+//console.log(me2.name;)
