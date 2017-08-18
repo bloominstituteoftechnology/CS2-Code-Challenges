@@ -21,3 +21,18 @@ function setPrint(i) {
 		console.log(i);
 	});
 }
+// ES6
+for (let h = 1; h <= 10; h++) {
+	setTimeout(function() {
+		console.log(h);
+	}, 0);
+}
+// 
+
+for (var i = 1; i <= 10; i++) {
+	(function(i) {
+	setTimeout(function() {
+		console.log(i);
+	}, 0);
+	})(i);
+}

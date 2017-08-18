@@ -20,4 +20,41 @@
  *
  * This is how you would structure the game objects in an actual game
  * application in Unity or another similar framework.
+ * this.value = [Humanoid, Animal, Plant];
+  this.Humanoid = [Human, Elf, Orc];
+  this.Animal =[Bear, Wolf];
+  this.Plant = [FleshEatingDaisy];
  */
+
+ class NPC {
+  constructor(value) {
+    this.value = value;
+    this.children = [];
+  }
+  class Humanoid {
+    constructor(value) {
+      this.value = value;
+      this.children = [Human, Elf, Orc];
+    }
+  }
+  class Animal {
+    constructor(value) {
+      this.value = value;
+      this.children = [Bear, Wolf];
+    }
+  }
+  class Plant {
+    constructor(value) {
+      this.value = value;
+      this.children = [FleshEatingDaisy];
+    }
+  }
+  class Human {
+    constructor(value) {
+      this.value = value;
+      this.children = [Soldier, Peasant, Bandit];
+    }
+  }
+
+
+ } // end of class NPC
