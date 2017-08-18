@@ -14,7 +14,7 @@
  // create function that takes in num
  // iterate from top down to find the highest number that is a palindrome
  // this way for higher numbers you dont have to iterate as far 
- // set a counter and j at 2
+ // set a counter at 0 and j at 2
  // use a while loop to test whether prime
  // the while loop will help to cut down on time because as soon as you find out its not
  // if the the i is found to be divisible by j the loop is stopped
@@ -26,6 +26,8 @@
      for (let i = num; i > 0; i--) {
        const str = i.toString();
          if (str === str.split('').reverse().join('')) {
+           let j = 2;
+           let count = 0;
            while (count === 0 && j <= (i/2)) {
              if (i % j === 0) count++;
              j++;
