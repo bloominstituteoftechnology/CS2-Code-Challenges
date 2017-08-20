@@ -17,5 +17,3 @@ You have a five-quart jug, a three-quart jug, and an unlimited supply of water (
 # pour the 3 quarts into the 5 quart jug
 
 # the 5 quart jug now contains 4 quarts
-
-
