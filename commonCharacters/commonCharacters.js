@@ -6,3 +6,15 @@
  * Example: commonCharacters('acexivou', 'aegihobu')  *
  * Returns: 'aeiou'
 */
+
+const commonCharacters = (str1, str2) => {
+  const commonChArr = [];
+  for (let i = 0; i < str1.length; i++){
+    if (!commonChArr.includes(str1[i])){
+      if (str2.includes(str1[i])) commonChArr.push(str1[i]);
+    }
+  }
+  return commonChArr;
+}
+
+console.log(commonCharacters('apple','bananas'));
