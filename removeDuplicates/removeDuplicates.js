@@ -15,8 +15,7 @@ const removeDuplicates = (arr) => {
       temp.push(arr[i]);
     }
   }
-  arr = temp;
-  return arr;
+  return temp;
 };
 
 
