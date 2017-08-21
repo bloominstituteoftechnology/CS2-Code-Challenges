@@ -6,3 +6,11 @@
  * Example: commonCharacters('acexivou', 'aegihobu')  *
  * Returns: 'aeiou'
 */
+const commonCharacters = (string1,string2) => {
+	const first = new Set(string1);
+	const second = new Set(string2); 
+	const returnedStr = [...first].filter(char  => second.has(char));
+	return returnedStr;
+}
+
+console.log(commonCharacters('acexivou', 'aegihobu'));  
