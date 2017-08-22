@@ -6,6 +6,7 @@
  * Example: commonCharacters('acexivou', 'aegihobu')  *
  * Returns: 'aeiou'
 */
+<<<<<<< HEAD
 const commonChars = (string1, string2) => {
     let combinedStr = '';
     for(let i = 0; i < string1.length; i++){
@@ -19,3 +20,5 @@ const commonChars = (string1, string2) => {
   }
   
   console.log(commonChars('acexivou', 'aegihobu'));``
+=======
+>>>>>>> e4337df47805c308e007181cf6cdc974564b766c
