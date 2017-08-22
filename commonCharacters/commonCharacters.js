@@ -18,4 +18,4 @@ const commonChars = (string1, string2) => {
   return combinedStr;
   }
   
-  console.log(commonChars('acexivou', 'aegihobu'));
+  console.log(commonChars('acexivou', 'aegihobu'));``
