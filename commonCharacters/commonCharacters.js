@@ -13,7 +13,6 @@ const commonCharacters = (str1, str2) => {
   const seen = {};
   let common = '';
   const matches = str1.match(new RegExp('(['+str2+'])', 'g'))
-  let length = matches.length
   for (let i = 0; i < matches.length; i++){
     if (matches[i] !== ' ' && !seen[matches[i]]) {
       common += matches[i];
