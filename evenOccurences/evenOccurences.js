@@ -12,4 +12,21 @@
 
 const evenOccurence = (arr) => {
   // Your code here.
+  const occ = {}
+  let returnVal;
+  for (let i = 0; i < arr.length; i++) {
+    if (occ[arr[i]]) occ[arr[i]]++;
+    else occ[arr[i]] = 1;
+  }
+  const occKeys = Object.keys(occ);
+  for (let j = 0; j < occKeys.length; j++) {
+    if(occ[occKeys[j]] % 2 === 0) {
+      returnVal = occKeys[j];
+      break;
+    }
+  }
+  return returnVal;
 };
+
+const onlyEven = evenOccurence([1, 7, 2, 4, 5, 1, 6, 8, 9, 6, 4, 1]);
+console.log(onlyEven); //  4
