@@ -6,3 +6,4 @@
  * Example: commonCharacters('acexivou', 'aegihobu')  *
  * Returns: 'aeiou'
 */
+

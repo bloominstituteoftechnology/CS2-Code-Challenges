@@ -21,3 +21,10 @@
  * This is how you would structure the game objects in an actual game
  * application in Unity or another similar framework.
  */
+class NPC{
+  constructor(Humanoid, Animal, Plant) {
+    this.NPC= 'Charles';
+    this.strenght = strenght;
+    this.speed = speed;
+
+    
