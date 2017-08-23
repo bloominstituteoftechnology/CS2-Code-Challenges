@@ -4,20 +4,24 @@
 // If the "compressed" string would not become smaller than the original string,
 // your method should return the original string.
 // You can assume the string has only uppercase and lowercase letters (a - z).
-//1. create an object to hold properties, obj[letter]=1
-//2. if string exists, increment obj[letter]
 
 const stringCompression = (str) => {
-  const obj = {};
+  let newStr = '';
+  let count = 1;
   for (let i = 0; i < str.length; i++) {
-    const letter = str[i];
-    if (obj[letter]) obj[letter]++;
-    if (!obj[letter]) obj[letter] = 1;
+    const character = str[i];
+    const nextCharacter = str[i+1];
+    if (character !== nextCharacter) {
+      newStr += character + count;
+      count = 1;
+    }
+    if (character === nextCharacter) {
+      count++;
+    }
   }
-  let newStr = Object.entries(obj).join('').replace(/,/g,"");
   return newStr;
 }
 
-console.log(stringCompression('aaabeecac'));
+console.log(stringCompression('aaaabbbbccccddcc'))
 
-//I screwed this up.  Will fix it.
+console.log(stringCompression('aaabeecac'));
