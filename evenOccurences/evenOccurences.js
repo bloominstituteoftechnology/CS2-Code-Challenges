@@ -8,8 +8,8 @@
 const onlyEven = [1, 7, 2, 4, 5, 1, 6, 8, 9, 6, 4, 1]; //  4
 
 const evenOccurence = (arr) => {
-  let a = [...new Set(arr)],
-  		b = 0;
+	let a = [...new Set(arr)],
+      b = 0;
   for (i in a) {
     b = 0;
     for (j in arr) {
