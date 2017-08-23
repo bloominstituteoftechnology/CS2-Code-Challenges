@@ -6,7 +6,7 @@
  * Example: commonCharacters('acexivou', 'aegihobu')  *
  * Returns: 'aeiou'
 */
-
+/*
 const commonChar = (str1, str2) => {
     let string = [];
     if (str1.indexOf('a') > -1 && str2.indexOf('a') > -1) {
@@ -31,3 +31,18 @@ const str1 = 'areyiwoqu';
 const str2 = 'asedifogu';
 
 console.log(commonChar(str1, str2));
+*/
+
+
+const commonChars = (str1, str2) => {
+    let common = [];
+
+
+    str1.split('').forEach((letter) => {
+        if (str2.split('').includes(letter) && !common.includes(letter)) {
+            common.push(letter);
+        }
+    });
+    return common.join('').replace(' ', '');
+}
+console.log(commonChars('axei ou', 'aeidou'));

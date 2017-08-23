@@ -7,7 +7,10 @@ needs 4 quarts of water
 
 can't fill the water up exactly half
 
-Fill up the five-quart jug with 2.6 quarts of water and fill the three-quart jug with 1.4 quarts of water.
+Fill up the five-quart jug with 3 quarts of water and fill the three-quart jug with 1 quarts of water.
 You will get exactly 4 quarts of water.
+
+Step 1: Fill the 5 quarts pour all of the water inside the 3 quarts jug
+Step 2:
 
 does not say we can't go over half of the jug. Just says having exactly half is impossible.
