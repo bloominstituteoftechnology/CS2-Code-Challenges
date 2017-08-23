@@ -12,4 +12,21 @@
 
 const evenOccurence = (arr) => {
   // Your code here.
+  let holder = {};
+  for (var i = 0; i < arr.length; i++) {
+    if (arr[i] in holder) {
+      holder.arr[i]++;
+    } else {
+      holder.arr[i] = 1;
+    }
+  }
+  for (var j = 0; j < holder.length; j++) {
+    if (holder.j % 2 === 0) {
+      return j;
+    }
+  }
+  return null;
 };
+
+const otherArr = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 1, 6, 2, 8, 3, 6, 4];
+console.log(evenOccurence(otherArr));
