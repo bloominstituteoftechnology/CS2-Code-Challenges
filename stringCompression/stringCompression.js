@@ -19,3 +19,5 @@ const stringCompression = (str) => {
 }
 
 console.log(stringCompression('aaabeecac'));
+
+//I screwed this up.  Will fix it.
