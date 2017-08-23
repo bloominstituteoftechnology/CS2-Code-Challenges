@@ -12,4 +12,21 @@
 
 const evenOccurence = (arr) => {
   // Your code here.
+  const obj = {};
+
+  for (let i = 0; i < arr.length; i++) {
+    const count = arr[i];
+    if (obj[count]) {
+      obj[count]++;
+    }
+    if (!obj[num]) {
+      obj[num] = 1;
+    }
+  }
+  for (let value in obj) {
+    if (obj[value] % 2 === 0) {
+      return value;
+    }
+  }
+  return 'nothing found';
 };
