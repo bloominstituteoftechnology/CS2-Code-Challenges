@@ -7,6 +7,7 @@
 // Test Cases
 const onlyEven = [1, 7, 2, 4, 5, 1, 6, 8, 9, 6, 4, 1]; //  4
 
+// Solution #1
 const evenOccurence = (arr) => {
   let a = [...new Set(arr)],
       b = 0;
@@ -22,9 +23,9 @@ const evenOccurence = (arr) => {
 	return null;
 }
 
+// Solution #2
 // const evenOccurence = arr => {
 //   let a = {};
-
 //   arr.forEach((i) => {
 // 		if (a[i]) a[i] += 1;
 // 		else a[i] = 1;
