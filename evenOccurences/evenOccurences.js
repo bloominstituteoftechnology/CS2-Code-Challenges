@@ -25,7 +25,7 @@
 //[1, 2, 3, 4] => null
 
 const evenOccurence = (arr) => {
-  let obj = {};
+  const obj = {};
   for (let i = 0; i < arr.length; i++) {
     if (obj[arr[i]]) obj[arr[i]] += 1;
     if (!obj[arr[i]]) obj[arr[i]] = 1;
