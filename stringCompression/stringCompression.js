@@ -13,7 +13,7 @@ const test4 = 'ABCDD'// => 'ABCDD'
 const compressor = (string) => {
   const letters = []
   for(let i = 0; i < string.length; i++) {
-    if (i === 0 || string[i] !== string[i - 1]) {
+    if (string[i] !== string[i - 1]) {
       letters.push(...[string[i], 1])
     } else {
       letters[letters.length - 1]++
