@@ -15,7 +15,7 @@ create function that takes in string
         if the previous character is the same as the current character
             add one to the characters key value in memo
         if the next character is different from the current character
-            add the current character add the amount of times in a row we've seen that character to the new string
+            add the current character and the amount of times in a row we've seen that character to the new string
     if the new string's length is less than the original string return the new string
     return the original string
 */
@@ -28,16 +28,9 @@ const stringCompression = (str) => {
     let newstr = '';
     const memo = {};
     for (let i = 0; i < str.length; i++) {
-        if (i === 0 || str[i - 1] !== str[i]) {
-          memo[str[i]] = 1;
-        }
-        if (str[i - 1] === str[i]) {
-          memo[str[i]] += 1
-        }
-      if (str[i + 1] !== str[i]) {
-        newstr += str[i] + memo[str[i]];
-      }
+      if (i === 0 || str[i - 1] !== str[i]) memo[str[i]] = 1;
+      if (str[i - 1] === str[i]) memo[str[i]]++;
+      if (str[i + 1] !== str[i]) newstr += str[i] + memo[str[i]];
     }
-  if (newstr.length < str.length) return newstr;
-  return str;
+  return newstr.length < str.length ? newstr : str;
 }
