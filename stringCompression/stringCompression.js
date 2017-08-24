@@ -39,5 +39,5 @@ const stringCompression = (str) => {
       }
     }
   if (newstr.length < str.length) return newstr;
-  return str;
+  return newstr;
 }
