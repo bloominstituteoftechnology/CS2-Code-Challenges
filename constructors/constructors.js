@@ -20,6 +20,7 @@
  *
  * This is how you would structure the game objects in an actual game
  * application in Unity or another similar framework.
+<<<<<<< HEAD
  */ 
 class NPC {
     constructor(options) {
@@ -57,3 +58,6 @@ class Humanoid {
     } 
 
 }
+=======
+ */
+>>>>>>> 074983f1e0ddf2bdac7d181cf6374379a6f9dbdd

@@ -3,6 +3,7 @@
  * Hint: it's 929
  * You will first want to determine if the number is a palindrome and then determine if it is prime.
  * A palindrome is a number that is the same forwards and backwards: 121, 323, 123454321, etc.
+<<<<<<< HEAD
  */ 
 
 const largestPrime = (number) => {
@@ -39,3 +40,6 @@ const largestPrime = (number) => {
 }
 
 largestPrime(1000);
+=======
+ */
+>>>>>>> 074983f1e0ddf2bdac7d181cf6374379a6f9dbdd

@@ -6,12 +6,17 @@
 
 /*
  *  * example usage:
+<<<<<<< HEAD
  *   * const onlyEven = evenOccurence([1, 7, 2, 4, 5, 1, 6, 8, 9, 6, 4, 1]);
+=======
+ *   * const onlyEven = evenOccurance([1, 7, 2, 4, 5, 1, 6, 8, 9, 6, 4, 1]);
+>>>>>>> 074983f1e0ddf2bdac7d181cf6374379a6f9dbdd
  *    * console.log(onlyEven); //  4
  *    */
 
 const evenOccurence = (arr) => {
   // Your code here.
+<<<<<<< HEAD
     if (arr.length == 0) return null; 
     const thisArr = arr[0];
     const modeMap = [];  
@@ -28,4 +33,6 @@ const evenOccurence = (arr) => {
         }
       return thisArr;
     }
+=======
+>>>>>>> 074983f1e0ddf2bdac7d181cf6374379a6f9dbdd
 };

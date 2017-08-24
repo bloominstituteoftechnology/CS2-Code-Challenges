@@ -5,6 +5,7 @@
  * Do not return duplicate characters and ignore whitespace in your returned string.  *
  * Example: commonCharacters('acexivou', 'aegihobu')  *
  * Returns: 'aeiou'
+<<<<<<< HEAD
 */ 
     const mostCommon = (str1, str2) => {
         const A = str1.split(); 
@@ -17,3 +18,6 @@
             }
         }, this);
     }
+=======
+*/
+>>>>>>> 074983f1e0ddf2bdac7d181cf6374379a6f9dbdd
