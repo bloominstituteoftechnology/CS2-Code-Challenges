@@ -21,3 +21,65 @@
  * This is how you would structure the game objects in an actual game
  * application in Unity or another similar framework.
  */
+
+class NPC {
+  constructor(hp, strength, speed){
+    this.hp = hp;
+    this.strength = strength;
+    this.speed = speed;
+  }
+}
+
+class Humanoid extends NPC {
+  constructor(hp, strength, speed){
+    super(hp, strength, speed);
+  }
+}
+
+class Animal extends NPC {
+  constructor(hp, strength, speed){
+    super(hp, strength, speed);
+  }
+}
+
+class Plant extends NPC {
+  constructor(hp, strength, speed) {
+    super(hp, strength, speed);
+  }
+}
+
+class Humanoid extends Human {
+  constructor(hp, strength, speed) {
+    super(hp, strength, speed);
+  }
+}
+
+class Elf extends Humanoid {
+  constructor(hp, strength, speed) {
+    super(hp, strength, speed);
+  }
+}
+
+class Orc extends Humanoid {
+  constructor(hp, strength, speed) {
+    super(hp, strength, speed);
+  }
+}
+
+class Bear extends Animal {
+  constructor(hp, strength, speed) {
+    super(hp, strength, speed);
+  }
+}
+
+class Wolf extends Animal {
+  constructor(hp, strength, speed) {
+    super(hp, strength, speed);
+  }
+}
+
+class FleshEatingDaisy extends Plant {
+  constructor(hp, strength, speed) {
+    super(hp, strength, speed);
+  }
+}
