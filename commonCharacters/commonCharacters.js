@@ -6,3 +6,15 @@
  * Example: commonCharacters('acexivou', 'aegihobu')  *
  * Returns: 'aeiou'
 */
+const commonCharacters = (a, b) => {
+  let c = '';
+  for (let i = 0; i < a.length; i++) {
+    const char = a.charAt(i);
+    if (b.indexOf(char) !== -1) {
+      if (c.indexOf(char) === -1) {
+      c = c + char;
+      }
+    }
+  }
+  return c;
+};
