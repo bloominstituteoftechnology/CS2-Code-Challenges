@@ -6,3 +6,20 @@
  * Example: commonCharacters('acexivou', 'aegihobu')  *
  * Returns: 'aeiou'
 */
+const test1 = 'acexivj oujdf';
+const test2 = 'aeg ihobujj';
+
+const commonCharacters = (str1, str2) => {
+  const seen = {};
+  let common = '';
+  const matches = str1.match(new RegExp('(['+str2+'])', 'g'))
+  for (let i = 0; i < matches.length; i++){
+    if (matches[i] !== ' ' && !seen[matches[i]]) {
+      common += matches[i];
+      seen[matches[i]] = true;
+    }
+  }
+  return common
+}
+  
+console.log(commonCharacters(test1, test2))
