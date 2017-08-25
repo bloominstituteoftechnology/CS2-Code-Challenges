@@ -1,6 +1,5 @@
 /*  For today's coding challenge your job is to write functions
  *  so that each function call works.
- *
  *  Example:
  *
  *  greeting('Hey guys', (message) => {
@@ -12,9 +11,7 @@
  *  const greeting = (str, cb) => {
  *    cb(str);
  *  };
- *
 */
-
 
 // Write a function called firstItem that passes the first item of the given array to the callback function
 
@@ -23,6 +20,11 @@ const foods = ['pineapple', 'mango', 'ribeye', 'curry', 'tacos', 'ribeye', 'mang
 firstItem(foods, (firstItem) => {
   console.log(`The first item is ${firstItem}.`);
 });
+
+const first = (foods, callback) => {
+     ccallback(foods[0]);
+};
+    console.log()
 
 // Write a function called getLength that passes the length of the array into the callback
 
