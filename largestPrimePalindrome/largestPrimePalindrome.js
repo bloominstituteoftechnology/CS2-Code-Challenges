@@ -1,6 +1,34 @@
-/*
- * Create a function that returns the largest prime palindrome less than 1000.
- * Hint: it's 929
- * You will first want to determine if the number is a palindrome and then determine if it is prime.
- * A palindrome is a number that is the same forwards and backwards: 121, 323, 123454321, etc.
- */
+const isPrime = n => {
+  let divisor = 3,
+      limit = Math.sqrt(n);
+
+  if (n === 2 || n === 3) return true;
+  if (n % 2 === 0) return false;
+
+  while (divisor <= limit) {
+    if (n % divisor === 0) return false;
+    else divisor += 2;
+  }
+  return true;
+}
+
+const isPalindrome = n => {
+  let str = n.toString(),
+      len = str.length;
+
+  for (let i = 0; i < len / 2; i++) {
+    if (str[i] !== str[len -1 -i])
+      return false;
+  }
+  return true;
+}
+
+const largestPrimePalindrome = n => {
+  for (let i = n; i > 0; i--) {
+    if (isPrime(i) && isPalindrome(i)) return i;
+  }
+}
+
+console.log(largestPrimePalindrome(1000))
+
+
