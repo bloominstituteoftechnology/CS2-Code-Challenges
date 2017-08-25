@@ -5,9 +5,13 @@
 // I've been asked this three times in separate interviews.
 
 for (var i = 1; i <= 10; i++) {
+	let newI = i;
 	setTimeout(function() {
 		// From looking at the code you would assume it would print 1 - 10
 		// It doesn't.  Why?  How can you make it print 1 - 10.
-		console.log(i);
+		console.log(newI);
 	}, 0);
 }
+
+//It is not working because the loop will finish before the first timeout function is called there for setting it to 11 I created a variable outside the settimeout
+//and I push it through to the console log which counts from 1 to 10

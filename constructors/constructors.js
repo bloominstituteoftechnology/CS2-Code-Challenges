@@ -21,3 +21,100 @@
  * This is how you would structure the game objects in an actual game
  * application in Unity or another similar framework.
  */
+
+ class npc {
+    constructor(options) {
+        this.hp = options.hp;
+        this.strength = options.strength;
+        this.speed = options.speed;
+        this.health = options.health;
+        
+    }
+/*******************************************/
+ }
+
+ class humanoid extends npc {
+    constructor (options){
+        super(options);
+        this.weapon = options.weapons;
+        this.armor = options.armor;
+    }
+
+ }
+
+ class human extends humanoid {
+     constructor (options) {
+        super(options);
+        this.height = options.height;
+
+     }
+    
+ }
+ class soldier extends human {
+     constructor (options) {
+        super(options);
+
+     }
+
+ }
+ class peasant extends human {
+     constructor (options) {
+         super(options);
+
+
+     }
+
+ }
+
+ class bandit extends human {
+     constructor (options) {
+         super(options);
+
+     }
+
+ }
+ /*******************************************/
+ class elf extends humanoid {
+    constructor (options) {
+        super(options);
+    }
+ }
+
+/*******************************************/
+ class orc extends humanoid {
+    constructor (options) {
+        super(options);
+    }
+ }
+/*******************************************/
+ class animal extends npc {
+    constructor(options) {
+        super(options);
+        this.damage = options.damage;
+        
+    }
+
+ }
+
+ class bear extends animal {
+    constructor (options) {
+        super(options);
+    }
+ }
+ class wolf extends animal {
+    constructor (options) {
+        super(options);
+    }
+ }
+ /*******************************************/
+ class plant extends npc {
+    constructor (options) {
+        super(options);
+    }
+ }
+ class fleshEatingDaisy extends plant {
+    constructor (options) {
+        super(options);
+    }
+ }
+ /*******************************************/
