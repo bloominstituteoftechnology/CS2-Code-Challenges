@@ -46,7 +46,7 @@ const mode = arr => {
 class MeanMedianMode {
   constructor(options) {
     this.mean = options.mean;
-    this.media = options.median;
+    this.median = options.median;
     this.mode = options.mode;
   }
 }
