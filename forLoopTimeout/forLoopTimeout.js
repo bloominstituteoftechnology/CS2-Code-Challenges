@@ -4,10 +4,24 @@
 // The output should be 1, 2, 3, .... 10. Right now it just prints 11.
 // I've been asked this three times in separate interviews.
 
+
+/*
+By the time console.log is being called the final value of i is 11 because it has already ran through the loop
+this is due to closure
+when  creating settimeout it gets hoisted to the global scope.  i is not within its scope until after the loop runs
+this is why creating a function within a loop is bad practice
+in es6 let would not have a block scope
+*/
 for (var i = 1; i <= 10; i++) {
-	setTimeout(function() {
-		// From looking at the code you would assume it would print 1 - 10
-		// It doesn't.  Why?  How can you make it print 1 - 10.
-		console.log(i);
-	}, 0);
+  wrapper(i);
 }
+
+function wrapper(num) {
+	setTimeout(function() {
+		console.log(num);
+	}, 0);
+};
+
+// By setting a function around setTimeout called wrapper we can take i each time 1 is added and
+// call wrapper with i as the argument.  This i value is being saved at that point in time and
+// console logged by setTimeout at each instance
