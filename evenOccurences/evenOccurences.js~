@@ -6,7 +6,6 @@
 
 /*
  *  * example usage:
- *   * const onlyEven = evenOccurance([1, 7, 2, 4, 5, 1, 6, 8, 9, 6, 4, 1]);
  *    * console.log(onlyEven); //  4
  *    */
 
@@ -20,7 +19,7 @@ const evenOccurence = (arr) => {
   let firstEvenOcc; 
   occNumKeys.forEach((x) => {
     if (occNums[x] % 2 === 0) {
-      if (!firstEvenOcc) firstEvenOcc = x;
+      firstEvenOcc = x;
       return;
     }
   });
