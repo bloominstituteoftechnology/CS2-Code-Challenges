@@ -9,8 +9,8 @@
  */
 
 // Test Case
-const a = [13, 18, 13, 14, 13, 16, 14, 21, 13];
-// const a = [13, 18, 13, 14, 13, 16, 14, 21,];
+const a = [13, 18, 13, 14, 13, 16, 14, 21, 13]; // odd number of elements
+// const a = [13, 18, 13, 14, 13, 16, 14, 21]; // even number of elements
 
 // Solution
 const mean = arr => {
@@ -36,8 +36,6 @@ const mode = arr => {
   arr.forEach(i => {
     if (seen[i] === undefined) return (seen[i] = 1);
     if (seen[i] !== undefined) return (seen[i] += 1);
-
-    console.log(seen[i]);
   });
   const tmp = Object.values(seen),
          mode = tmp.reduce((a, b) => Math.max(a, b));
