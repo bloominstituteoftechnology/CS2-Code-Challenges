@@ -6,3 +6,16 @@
  * Example: commonCharacters('acexivou', 'aegihobu')  *
  * Returns: 'aeiou'
 */
+
+const commonCharacters = (str1, str2) => {
+  let common = [];
+
+  str1.split('').forEach((char) => {
+    if (str2.split('').includes(char) && !common.includes(char)) {
+      common.push(char);
+    }
+  })
+  return common.join('').replace(' ', '');
+}
+
+console.log(commonCharacters('abcdefg', 'bcd g'));

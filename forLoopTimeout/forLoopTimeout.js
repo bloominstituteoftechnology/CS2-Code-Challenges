@@ -11,3 +11,11 @@ for (var i = 1; i <= 10; i++) {
 		console.log(i);
 	}, 0);
 }
+
+// Closure issue. Var is globally scoped, change to let. 
+
+for (let i = 1; i <= 10; i++) {
+	setTimeout(function() {
+		console.log(i);
+	}, 0);
+}
